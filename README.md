@@ -1,2 +1,10 @@
 # Study-iOS
-iOS 어플리케이션 만들어보기
+
+### MyMovieChart 
+
+* use TableView (Basic, Subtitle, Custom cell)
+
+  <img src="./images/MyMovieChart_Subtitle.png" width="30%" height="30%"></img>
+
+  <img src="./images/MyMovieChart_Custom.png" width="30%" height="30%"></img>
+
