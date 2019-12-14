@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // 영화 정보를 담기 위한 객체
 // Value Object 패턴
@@ -17,4 +18,7 @@ class MovieVO {
     var detail: String?     // 상세정보
     var opendate: String?   // 개봉일
     var rating: Double?     // 평점
+    
+    // 영화 섬네일 이미지를 담을 UIImage를 추가한다
+    var thumbnailImage: UIImage?
 }

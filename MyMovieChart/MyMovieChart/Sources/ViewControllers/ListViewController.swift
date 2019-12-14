@@ -32,6 +32,9 @@ class ListViewController: UITableViewController {
         // 주어진 행에 맞는 데이터 소스를 읽어온다.
         let row = self.list[indexPath.row]
         
+        // 로그 출력
+        NSLog("제목:\(row.title!), 호출된 행 번호:\(indexPath.row)")
+        
         // 테이블 셀 객체를 직접 생성하는 대신 큐 로부터 가져옴
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! MovieCell
         
@@ -41,12 +44,10 @@ class ListViewController: UITableViewController {
         cell.opendate?.text = row.opendate
         cell.rating?.text = "\(row.rating!)"
         
-        // 섬네일 경로를 인자값으로 하는 URL 객체를 생성
-        let url: URL! = URL(string: row.thumbnail!)
-        // 이미지를 읽어와 Data 객체에 저장
-        let imageData = try! Data(contentsOf: url)
-        // UIImage 객체를 생성하여 아울렛 변수의 image 속성에 대입
-        cell.thumbnail.image = UIImage(data: imageData)
+        // 비동기 방식으로 섬네일 이미지를 읽어옴
+        DispatchQueue.main.async (execute: {
+            cell.thumbnail.image = self.getThumbnailImage(indexPath.row)
+            })
         
         return cell
     }
@@ -99,6 +100,11 @@ class ListViewController: UITableViewController {
                 mvo.detail = r["linkUrl"] as? String
                 mvo.rating = ((r["ratingAverage"] as! NSString).doubleValue)
                 
+                // 웹상에 있는 이미지를 읽어와 UIImage 객체로 생성
+                let url: URL! = URL(string: mvo.thumbnail!)
+                let imageData = try! Data(contentsOf: url)
+                mvo.thumbnailImage = UIImage(data: imageData)
+                
                 self.list.append(mvo)
                 
                 // 전체 데이터 카운트를 얻는다.
@@ -111,6 +117,22 @@ class ListViewController: UITableViewController {
             }
         } catch {
             NSLog("Parse Error!!")
+        }
+    }
+    
+    func getThumbnailImage(_ index: Int) -> UIImage {
+        // 인자값으로 받은 인덱스를 기반으로 해당하는 배열 데이터를 읽어옴
+        let mvo = self.list[index]
+        
+        // 메모이제이션 : 저장된 이미지가 있으면 그것을 반환하고, 없을 경우 내려받아 저장한 후 반환
+        if let savedImage = mvo.thumbnailImage {
+            return savedImage
+        } else {
+            let url: URL! = URL(string: mvo.thumbnail!)
+            let imageData = try! Data(contentsOf: url)
+            mvo.thumbnailImage = UIImage(data: imageData)   // UIImage를 MovieVO 객체에 우선 저장
+            
+            return mvo.thumbnailImage!
         }
     }
 }
