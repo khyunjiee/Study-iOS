@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -77,6 +78,7 @@
                                     <outlet property="rating" destination="WGc-4u-DeA" id="7hF-lu-npo"/>
                                     <outlet property="thumbnail" destination="1tx-JK-aft" id="akT-gB-oiQ"/>
                                     <outlet property="title" destination="p12-vP-3Hk" id="2C9-Mf-cec"/>
+                                    <segue destination="6C8-1y-pvz" kind="show" identifier="segue_detail" id="opd-3e-JbF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -94,6 +96,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gv5-qe-IY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1234.4000000000001" y="215.44227886056973"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="9m8-Oz-ZAw">
+            <objects>
+                <viewController id="6C8-1y-pvz" customClass="DetailViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQS-nm-EDl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ow9-Ol-N8A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="D1p-qc-Vw9">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xxz-k5-AfP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="AWU-jc-geB"/>
+                    <connections>
+                        <outlet property="spinner" destination="D1p-qc-Vw9" id="gHm-sA-dPN"/>
+                        <outlet property="wv" destination="ow9-Ol-N8A" id="mYe-qJ-U7J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uty-AT-DFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064.8000000000002" y="214.54272863568218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dqo-1p-vCp">
