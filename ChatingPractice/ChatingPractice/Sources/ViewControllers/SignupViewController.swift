@@ -44,13 +44,17 @@ class SignupViewController: UIViewController {
     
     @objc func signupEvent() {
         
-        Auth.auth().createUser(withEmail: email.text!, password: password.text!) { authResult, error in
+        guard let email_text = email.text, let password_text = password.text else { return }
+        
+        Auth.auth().createUser(withEmail: email_text, password: password_text) { (authResult, error) in
             
             guard let user = authResult?.user else {return}
             
-            let uid = user.uid
+            if error == nil {
+                let uid = user.uid
+                Database.database().reference().child("users").child(uid).setValue(["name": self.name.text!])
+            }
             
-            Database.database().reference().child("users").child(uid).setValue(["name": self.name.text!])
         }
         
     }
