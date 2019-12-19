@@ -53,17 +53,6 @@ class SignupViewController: UIViewController {
             Database.database().reference().child("users").child(uid).setValue(["name": self.name.text!])
         }
         
-        //        Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, err) in
-        //
-        //            guard let user = authResult?.user else {
-        //                return
-        //            }
-        //
-        //            let uid = user.uid
-        //
-        //            Database.database().reference().child("users").child(uid).setValue(["name": self.name.text!])
-        //        }
-        
     }
     
     @objc func cancelEvent() {
