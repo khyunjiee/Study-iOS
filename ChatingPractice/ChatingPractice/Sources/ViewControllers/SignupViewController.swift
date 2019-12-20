@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 
-class SignupViewController: UIViewController {
+class SignupViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet var email: UITextField!
     @IBOutlet var name: UITextField!
@@ -52,8 +52,9 @@ class SignupViewController: UIViewController {
             
             if error == nil {
                 let uid = user.uid
+                
                 Database.database().reference().child("users").child(uid).setValue(["name": self.name.text!])
-            }
+            }   
             
         }
         

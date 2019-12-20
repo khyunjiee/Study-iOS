@@ -59,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="40" id="WHF-g8-aWs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,13 +110,31 @@
                         <viewLayoutGuide key="safeArea" id="N2z-ci-sE8"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="kA6-lU-QiM" id="GHx-iF-M68"/>
                         <outlet property="loginButton" destination="jDR-n8-JsV" id="bvh-xk-y7y"/>
+                        <outlet property="password" destination="OCT-1q-piH" id="XLk-cd-yDa"/>
                         <outlet property="signupButton" destination="5n6-cI-yw3" id="Qnv-ZJ-zEO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2Q-RW-4cq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="889" y="95"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="PxL-KP-16r">
+            <objects>
+                <viewController storyboardIdentifier="PeopleViewController" id="W7z-Dh-Gh2" customClass="PeopleViewController" customModule="ChatingPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jP1-tg-xnR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eip-F8-zoZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="People" image="ic_people" id="2Zv-6k-SbZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qx-rQ-fiG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="-560"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="ASK-4O-t52">
@@ -129,7 +147,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Oj-4V-BAa" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="16" y="217" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="aHs-jP-ASW"/>
+                                    <constraint firstAttribute="height" constant="40" id="cDH-DC-tdT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -145,7 +163,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-z1-ocO" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="16" y="265" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Ing-Go-FwR"/>
+                                    <constraint firstAttribute="height" constant="40" id="ohQ-AO-5AR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -161,10 +179,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4u-g6-Z0u" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="16" y="313" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="UHU-eR-EbP"/>
+                                    <constraint firstAttribute="height" constant="40" id="f2d-Rc-fYT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -176,9 +194,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXf-zK-MDL">
                                 <rect key="frame" x="16" y="361" width="343" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.60392156862745094" green="0.32941176470588235" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Y8g-tS-Feh"/>
+                                    <constraint firstAttribute="height" constant="40" id="CQB-ZH-MC6"/>
                                 </constraints>
                                 <state key="normal" title="Signup">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -188,7 +206,7 @@
                                 <rect key="frame" x="16" y="409" width="343" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="f28-vk-0n3"/>
+                                    <constraint firstAttribute="height" constant="40" id="AYV-pf-bHt"/>
                                 </constraints>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,21 +215,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="BO5-bd-vTY" secondAttribute="trailing" constant="16" id="B6N-tm-fZD"/>
-                            <constraint firstItem="p4u-g6-Z0u" firstAttribute="top" secondItem="f2y-z1-ocO" secondAttribute="bottom" constant="8" id="Beh-TK-0eb"/>
-                            <constraint firstItem="0Oj-4V-BAa" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="Ijz-aK-rSg"/>
-                            <constraint firstItem="f2y-z1-ocO" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="K3z-pR-V5E"/>
-                            <constraint firstItem="f2y-z1-ocO" firstAttribute="top" secondItem="0Oj-4V-BAa" secondAttribute="bottom" constant="8" id="LdR-TA-0e5"/>
-                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="KXf-zK-MDL" secondAttribute="trailing" constant="16" id="NTx-g0-TlU"/>
-                            <constraint firstItem="BO5-bd-vTY" firstAttribute="top" secondItem="KXf-zK-MDL" secondAttribute="bottom" constant="8" id="OAo-R6-3PV"/>
-                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="f2y-z1-ocO" secondAttribute="trailing" constant="16" id="PKe-XX-0Li"/>
-                            <constraint firstItem="p4u-g6-Z0u" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="XMf-Dt-mCr"/>
-                            <constraint firstItem="KXf-zK-MDL" firstAttribute="top" secondItem="p4u-g6-Z0u" secondAttribute="bottom" constant="8" id="XWo-AK-xZy"/>
-                            <constraint firstItem="0Oj-4V-BAa" firstAttribute="top" secondItem="iMX-rI-kyc" secondAttribute="top" constant="217" id="adc-XK-hAn"/>
-                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="0Oj-4V-BAa" secondAttribute="trailing" constant="16" id="d1j-nn-UYc"/>
-                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="p4u-g6-Z0u" secondAttribute="trailing" constant="16" id="jaE-sN-KSj"/>
-                            <constraint firstItem="BO5-bd-vTY" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="t7A-BY-paA"/>
-                            <constraint firstItem="KXf-zK-MDL" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="vGS-cx-tXo"/>
+                            <constraint firstItem="p4u-g6-Z0u" firstAttribute="top" secondItem="f2y-z1-ocO" secondAttribute="bottom" constant="8" id="1Z2-Lj-wM2"/>
+                            <constraint firstItem="BO5-bd-vTY" firstAttribute="top" secondItem="KXf-zK-MDL" secondAttribute="bottom" constant="8" id="2Zn-By-AD7"/>
+                            <constraint firstItem="f2y-z1-ocO" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="88P-kS-Je6"/>
+                            <constraint firstItem="f2y-z1-ocO" firstAttribute="top" secondItem="0Oj-4V-BAa" secondAttribute="bottom" constant="8" id="BOZ-W9-DOf"/>
+                            <constraint firstItem="0Oj-4V-BAa" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="DiM-mw-u1x"/>
+                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="KXf-zK-MDL" secondAttribute="trailing" constant="16" id="EGc-Yg-tBA"/>
+                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="f2y-z1-ocO" secondAttribute="trailing" constant="16" id="JDP-EU-oho"/>
+                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="BO5-bd-vTY" secondAttribute="trailing" constant="16" id="cRB-g6-Hil"/>
+                            <constraint firstItem="BO5-bd-vTY" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="eq4-q9-p5z"/>
+                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="p4u-g6-Z0u" secondAttribute="trailing" constant="16" id="jre-lP-CoK"/>
+                            <constraint firstItem="iMX-rI-kyc" firstAttribute="trailing" secondItem="0Oj-4V-BAa" secondAttribute="trailing" constant="16" id="mrK-0S-cbJ"/>
+                            <constraint firstItem="p4u-g6-Z0u" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="ocb-ow-WtO"/>
+                            <constraint firstItem="0Oj-4V-BAa" firstAttribute="top" secondItem="iMX-rI-kyc" secondAttribute="top" constant="217" id="qUj-oJ-Cin"/>
+                            <constraint firstItem="KXf-zK-MDL" firstAttribute="leading" secondItem="iMX-rI-kyc" secondAttribute="leading" constant="16" id="wVZ-dn-cyk"/>
+                            <constraint firstItem="KXf-zK-MDL" firstAttribute="top" secondItem="p4u-g6-Z0u" secondAttribute="bottom" constant="8" id="yfD-bs-CQs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iMX-rI-kyc"/>
                     </view>
@@ -227,8 +245,63 @@
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="794.75262368815595"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SDl-AK-tli">
+            <objects>
+                <tabBarController storyboardIdentifier="MainViewTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="77b-QH-MkN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pFQ-os-vZs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="W7z-Dh-Gh2" kind="relationship" relationship="viewControllers" id="Yy7-Fc-qw6"/>
+                        <segue destination="QmL-Lb-AfY" kind="relationship" relationship="viewControllers" id="6Bm-J3-OCC"/>
+                        <segue destination="hqr-Hj-fho" kind="relationship" relationship="viewControllers" id="IGu-nO-8Uj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wJ-x2-Imx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="94.902548725637189"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="nJb-jt-o47">
+            <objects>
+                <viewController id="QmL-Lb-AfY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L2I-2j-G7l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9ST-EC-e3l"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="ic_chat" id="Rhv-vp-jGM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K16-by-peG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598" y="99"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="vjW-rr-BlM">
+            <objects>
+                <viewController id="hqr-Hj-fho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vRd-AF-cay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3yO-jv-aaJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="ic_account_circle" id="aM3-az-d2X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMw-3r-YKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598" y="839"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ic_account_circle" width="18" height="18"/>
+        <image name="ic_chat" width="18" height="18"/>
+        <image name="ic_people" width="18" height="18"/>
         <image name="loading_icon" width="512" height="512"/>
     </resources>
 </document>

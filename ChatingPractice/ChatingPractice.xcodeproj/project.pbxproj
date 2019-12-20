@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5211ADBD23AD206A00A6925F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5211ADBC23AD206A00A6925F /* UserModel.swift */; };
 		5290F51D23AA07AF00B9C7F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F51C23AA07AF00B9C7F7 /* AppDelegate.swift */; };
 		5290F51F23AA07AF00B9C7F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F51E23AA07AF00B9C7F7 /* SceneDelegate.swift */; };
 		5290F52123AA07AF00B9C7F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F52023AA07AF00B9C7F7 /* ViewController.swift */; };
@@ -17,11 +18,13 @@
 		5290F53623AB3AD000B9C7F7 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5290F53523AB3AD000B9C7F7 /* RemoteConfigDefaults.plist */; };
 		5290F53823AB469B00B9C7F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F53723AB469B00B9C7F7 /* LoginViewController.swift */; };
 		5290F53A23AB52EE00B9C7F7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */; };
+		5290F53C23ABED8100B9C7F7 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F53B23ABED8100B9C7F7 /* PeopleViewController.swift */; };
 		A3EA564675A4E361A5BDD957 /* Pods_ChatingPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8A9C3A7E5915A0644C8306 /* Pods_ChatingPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B8A9C3A7E5915A0644C8306 /* Pods_ChatingPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatingPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5211ADBC23AD206A00A6925F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5290F51923AA07AF00B9C7F7 /* ChatingPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatingPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5290F51C23AA07AF00B9C7F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5290F51E23AA07AF00B9C7F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		5290F53523AB3AD000B9C7F7 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		5290F53723AB469B00B9C7F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		5290F53B23ABED8100B9C7F7 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		6F1C32CB06A0EF712BB049B0 /* Pods-ChatingPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatingPractice.release.xcconfig"; path = "Target Support Files/Pods-ChatingPractice/Pods-ChatingPractice.release.xcconfig"; sourceTree = "<group>"; };
 		E134259D9075BDA93616A8A8 /* Pods-ChatingPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatingPractice.debug.xcconfig"; path = "Target Support Files/Pods-ChatingPractice/Pods-ChatingPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5211ADBB23AD203B00A6925F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5211ADBC23AD206A00A6925F /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5290F51023AA07AF00B9C7F7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +97,7 @@
 			children = (
 				5290F51C23AA07AF00B9C7F7 /* AppDelegate.swift */,
 				5290F51E23AA07AF00B9C7F7 /* SceneDelegate.swift */,
+				5211ADBB23AD203B00A6925F /* Models */,
 				5290F53223AA07D100B9C7F7 /* ViewControllers */,
 			);
 			path = Sources;
@@ -106,6 +119,7 @@
 				5290F52023AA07AF00B9C7F7 /* ViewController.swift */,
 				5290F53723AB469B00B9C7F7 /* LoginViewController.swift */,
 				5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */,
+				5290F53B23ABED8100B9C7F7 /* PeopleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -245,8 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5290F53823AB469B00B9C7F7 /* LoginViewController.swift in Sources */,
+				5211ADBD23AD206A00A6925F /* UserModel.swift in Sources */,
 				5290F52123AA07AF00B9C7F7 /* ViewController.swift in Sources */,
 				5290F53A23AB52EE00B9C7F7 /* SignupViewController.swift in Sources */,
+				5290F53C23ABED8100B9C7F7 /* PeopleViewController.swift in Sources */,
 				5290F51D23AA07AF00B9C7F7 /* AppDelegate.swift in Sources */,
 				5290F51F23AA07AF00B9C7F7 /* SceneDelegate.swift in Sources */,
 			);
