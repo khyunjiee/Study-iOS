@@ -161,18 +161,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="han-uJ-PcE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="605"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="70" id="ShL-xa-HVi">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ShL-xa-HVi" id="V4m-kC-0ez">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pdd-W2-aPH" id="4Oo-L1-1Iy"/>
+                                    <outlet property="delegate" destination="Pdd-W2-aPH" id="3Vk-wG-2SG"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ylM-Gn-YMo" firstAttribute="bottom" secondItem="vID-pZ-fqh" secondAttribute="bottom" constant="20" id="0Et-IM-oQV"/>
+                            <constraint firstItem="han-uJ-PcE" firstAttribute="leading" secondItem="ylM-Gn-YMo" secondAttribute="leading" id="EOj-O3-Opk"/>
                             <constraint firstItem="ylM-Gn-YMo" firstAttribute="bottom" secondItem="rrf-oK-5OJ" secondAttribute="bottom" constant="20" id="Lka-6A-DWf"/>
                             <constraint firstItem="ylM-Gn-YMo" firstAttribute="trailing" secondItem="rrf-oK-5OJ" secondAttribute="trailing" constant="16" id="N5G-SY-cJB"/>
+                            <constraint firstItem="han-uJ-PcE" firstAttribute="top" secondItem="ylM-Gn-YMo" secondAttribute="top" id="The-58-wKB"/>
+                            <constraint firstItem="vID-pZ-fqh" firstAttribute="top" secondItem="han-uJ-PcE" secondAttribute="bottom" constant="8" id="gXi-X6-FRg"/>
+                            <constraint firstItem="han-uJ-PcE" firstAttribute="trailing" secondItem="ylM-Gn-YMo" secondAttribute="trailing" id="jkA-2Z-OJf"/>
                             <constraint firstItem="vID-pZ-fqh" firstAttribute="leading" secondItem="ylM-Gn-YMo" secondAttribute="leading" constant="16" id="rLa-Uj-oLW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ylM-Gn-YMo"/>
                     </view>
                     <connections>
                         <outlet property="sendButton" destination="rrf-oK-5OJ" id="lMC-YP-Wfa"/>
+                        <outlet property="tableview" destination="han-uJ-PcE" id="9Bf-eh-2iq"/>
                         <outlet property="textfield_message" destination="vID-pZ-fqh" id="OMB-O7-1Gq"/>
                     </connections>
                 </viewController>
