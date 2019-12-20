@@ -18,7 +18,8 @@
 		5290F53623AB3AD000B9C7F7 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5290F53523AB3AD000B9C7F7 /* RemoteConfigDefaults.plist */; };
 		5290F53823AB469B00B9C7F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F53723AB469B00B9C7F7 /* LoginViewController.swift */; };
 		5290F53A23AB52EE00B9C7F7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */; };
-		5290F53C23ABED8100B9C7F7 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F53B23ABED8100B9C7F7 /* PeopleViewController.swift */; };
+		52CF103023AD3F2E0065E072 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF102F23AD3F2E0065E072 /* PeopleViewController.swift */; };
+		52CF103223AD47BC0065E072 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF103123AD47BC0065E072 /* ChatViewController.swift */; };
 		A3EA564675A4E361A5BDD957 /* Pods_ChatingPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8A9C3A7E5915A0644C8306 /* Pods_ChatingPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +38,8 @@
 		5290F53523AB3AD000B9C7F7 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		5290F53723AB469B00B9C7F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		5290F53B23ABED8100B9C7F7 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		52CF102F23AD3F2E0065E072 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		52CF103123AD47BC0065E072 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		6F1C32CB06A0EF712BB049B0 /* Pods-ChatingPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatingPractice.release.xcconfig"; path = "Target Support Files/Pods-ChatingPractice/Pods-ChatingPractice.release.xcconfig"; sourceTree = "<group>"; };
 		E134259D9075BDA93616A8A8 /* Pods-ChatingPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatingPractice.debug.xcconfig"; path = "Target Support Files/Pods-ChatingPractice/Pods-ChatingPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +121,8 @@
 				5290F52023AA07AF00B9C7F7 /* ViewController.swift */,
 				5290F53723AB469B00B9C7F7 /* LoginViewController.swift */,
 				5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */,
-				5290F53B23ABED8100B9C7F7 /* PeopleViewController.swift */,
+				52CF102F23AD3F2E0065E072 /* PeopleViewController.swift */,
+				52CF103123AD47BC0065E072 /* ChatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -259,10 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5290F53823AB469B00B9C7F7 /* LoginViewController.swift in Sources */,
+				52CF103023AD3F2E0065E072 /* PeopleViewController.swift in Sources */,
+				52CF103223AD47BC0065E072 /* ChatViewController.swift in Sources */,
 				5211ADBD23AD206A00A6925F /* UserModel.swift in Sources */,
 				5290F52123AA07AF00B9C7F7 /* ViewController.swift in Sources */,
 				5290F53A23AB52EE00B9C7F7 /* SignupViewController.swift in Sources */,
-				5290F53C23ABED8100B9C7F7 /* PeopleViewController.swift in Sources */,
 				5290F51D23AA07AF00B9C7F7 /* AppDelegate.swift in Sources */,
 				5290F51F23AA07AF00B9C7F7 /* SceneDelegate.swift in Sources */,
 			);

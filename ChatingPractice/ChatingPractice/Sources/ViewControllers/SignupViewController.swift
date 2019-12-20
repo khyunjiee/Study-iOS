@@ -53,7 +53,7 @@ class SignupViewController: UIViewController, UINavigationControllerDelegate, UI
             if error == nil {
                 let uid = user.uid
                 
-                Database.database().reference().child("users").child(uid).setValue(["name": self.name.text!])
+                Database.database().reference().child("users").child(uid).setValue(["userName": self.name.text!, "uid": Auth.auth().currentUser?.uid])
             }   
             
         }

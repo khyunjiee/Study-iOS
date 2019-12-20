@@ -42,7 +42,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="h6s-WS-afm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -58,7 +58,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="WHF-g8-aWs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="889" y="95"/>
         </scene>
-        <!--People-->
+        <!--People View Controller-->
         <scene sceneID="PxL-KP-16r">
             <objects>
                 <viewController storyboardIdentifier="PeopleViewController" id="W7z-Dh-Gh2" customClass="PeopleViewController" customModule="ChatingPractice" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,11 +130,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="eip-F8-zoZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="People" image="ic_people" id="2Zv-6k-SbZ"/>
+                    <navigationItem key="navigationItem" id="eSl-4W-LUm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qx-rQ-fiG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2606" y="-560"/>
+            <point key="canvasLocation" x="3544.8000000000002" y="-560.86956521739137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jRq-Gh-Fio">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="Pdd-W2-aPH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8HE-Yc-Tkd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ylM-Gn-YMo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOz-S9-uCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4392" y="-563"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="ASK-4O-t52">
@@ -256,9 +271,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="W7z-Dh-Gh2" kind="relationship" relationship="viewControllers" id="Yy7-Fc-qw6"/>
-                        <segue destination="QmL-Lb-AfY" kind="relationship" relationship="viewControllers" id="6Bm-J3-OCC"/>
-                        <segue destination="hqr-Hj-fho" kind="relationship" relationship="viewControllers" id="IGu-nO-8Uj"/>
+                        <segue destination="yr2-xj-xEC" kind="relationship" relationship="viewControllers" id="krR-l9-3dP"/>
+                        <segue destination="QmL-Lb-AfY" kind="relationship" relationship="viewControllers" id="hxv-LT-Heh"/>
+                        <segue destination="hqr-Hj-fho" kind="relationship" relationship="viewControllers" id="rCG-0H-Q4s"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wJ-x2-Imx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -296,6 +311,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMw-3r-YKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2598" y="839"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="4s6-j5-Lz2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yr2-xj-xEC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" image="ic_people" id="2Zv-6k-SbZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qpQ-7V-Wmj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W7z-Dh-Gh2" kind="relationship" relationship="rootViewController" id="zbB-ft-U86"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNG-WP-FIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2605.5999999999999" y="-560.86956521739137"/>
         </scene>
     </scenes>
     <resources>

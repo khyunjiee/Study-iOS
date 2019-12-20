@@ -8,6 +8,10 @@
 
 import UIKit
 
+@objcMembers
 class UserModel: NSObject {
+    
     var userName: String?
+    var uid: String?
+    
 }
