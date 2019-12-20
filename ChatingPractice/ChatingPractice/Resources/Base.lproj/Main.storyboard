@@ -136,20 +136,49 @@
             </objects>
             <point key="canvasLocation" x="3544.8000000000002" y="-560.86956521739137"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="jRq-Gh-Fio">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" id="Pdd-W2-aPH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="Pdd-W2-aPH" customClass="ChatViewController" customModule="ChatingPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8HE-Yc-Tkd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrf-oK-5OJ">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="3Kk-6z-7ea"/>
+                                    <constraint firstAttribute="height" constant="30" id="4lh-Aj-ebG"/>
+                                </constraints>
+                                <state key="normal" title="전송"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vID-pZ-fqh">
+                                <rect key="frame" x="16" y="613" width="289" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="AXA-s5-t25"/>
+                                    <constraint firstAttribute="width" constant="289" id="a88-74-reN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ylM-Gn-YMo" firstAttribute="bottom" secondItem="vID-pZ-fqh" secondAttribute="bottom" constant="20" id="0Et-IM-oQV"/>
+                            <constraint firstItem="ylM-Gn-YMo" firstAttribute="bottom" secondItem="rrf-oK-5OJ" secondAttribute="bottom" constant="20" id="Lka-6A-DWf"/>
+                            <constraint firstItem="ylM-Gn-YMo" firstAttribute="trailing" secondItem="rrf-oK-5OJ" secondAttribute="trailing" constant="16" id="N5G-SY-cJB"/>
+                            <constraint firstItem="vID-pZ-fqh" firstAttribute="leading" secondItem="ylM-Gn-YMo" secondAttribute="leading" constant="16" id="rLa-Uj-oLW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ylM-Gn-YMo"/>
                     </view>
+                    <connections>
+                        <outlet property="sendButton" destination="rrf-oK-5OJ" id="lMC-YP-Wfa"/>
+                        <outlet property="textfield_message" destination="vID-pZ-fqh" id="OMB-O7-1Gq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOz-S9-uCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4392" y="-563"/>
+            <point key="canvasLocation" x="4391.1999999999998" y="-563.56821589205401"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="ASK-4O-t52">

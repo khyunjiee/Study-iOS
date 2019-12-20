@@ -20,6 +20,7 @@
 		5290F53A23AB52EE00B9C7F7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */; };
 		52CF103023AD3F2E0065E072 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF102F23AD3F2E0065E072 /* PeopleViewController.swift */; };
 		52CF103223AD47BC0065E072 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF103123AD47BC0065E072 /* ChatViewController.swift */; };
+		52CF103423AD48680065E072 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF103323AD48680065E072 /* ChatModel.swift */; };
 		A3EA564675A4E361A5BDD957 /* Pods_ChatingPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8A9C3A7E5915A0644C8306 /* Pods_ChatingPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		5290F53923AB52EE00B9C7F7 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		52CF102F23AD3F2E0065E072 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		52CF103123AD47BC0065E072 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		52CF103323AD48680065E072 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		6F1C32CB06A0EF712BB049B0 /* Pods-ChatingPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatingPractice.release.xcconfig"; path = "Target Support Files/Pods-ChatingPractice/Pods-ChatingPractice.release.xcconfig"; sourceTree = "<group>"; };
 		E134259D9075BDA93616A8A8 /* Pods-ChatingPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatingPractice.debug.xcconfig"; path = "Target Support Files/Pods-ChatingPractice/Pods-ChatingPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				5211ADBC23AD206A00A6925F /* UserModel.swift */,
+				52CF103323AD48680065E072 /* ChatModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				5290F53A23AB52EE00B9C7F7 /* SignupViewController.swift in Sources */,
 				5290F51D23AA07AF00B9C7F7 /* AppDelegate.swift in Sources */,
 				5290F51F23AA07AF00B9C7F7 /* SceneDelegate.swift in Sources */,
+				52CF103423AD48680065E072 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
