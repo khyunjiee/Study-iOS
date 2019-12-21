@@ -13,6 +13,7 @@
 		5270697D23AE855D00042056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5270697B23AE855D00042056 /* Main.storyboard */; };
 		5270697F23AE856000042056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5270697E23AE856000042056 /* Assets.xcassets */; };
 		5270698223AE856000042056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5270698023AE856000042056 /* LaunchScreen.storyboard */; };
+		5270698D23AE866200042056 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270698C23AE866200042056 /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5270697E23AE856000042056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5270698123AE856000042056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5270698323AE856000042056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5270698C23AE866200042056 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		5270697423AE855D00042056 /* MessageAlertEx */ = {
 			isa = PBXGroup;
 			children = (
+				5270698323AE856000042056 /* Info.plist */,
+				5270698A23AE857900042056 /* Resources */,
+				5270698923AE857500042056 /* Sources */,
+			);
+			path = MessageAlertEx;
+			sourceTree = "<group>";
+		};
+		5270698923AE857500042056 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5270698B23AE857F00042056 /* ViewControllers */,
 				5270697523AE855D00042056 /* AppDelegate.swift */,
 				5270697723AE855D00042056 /* SceneDelegate.swift */,
-				5270697923AE855D00042056 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5270698A23AE857900042056 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5270697B23AE855D00042056 /* Main.storyboard */,
 				5270697E23AE856000042056 /* Assets.xcassets */,
 				5270698023AE856000042056 /* LaunchScreen.storyboard */,
-				5270698323AE856000042056 /* Info.plist */,
 			);
-			path = MessageAlertEx;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5270698B23AE857F00042056 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5270697923AE855D00042056 /* ViewController.swift */,
+				5270698C23AE866200042056 /* AlertViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				5270697A23AE855D00042056 /* ViewController.swift in Sources */,
 				5270697623AE855D00042056 /* AppDelegate.swift in Sources */,
 				5270697823AE855D00042056 /* SceneDelegate.swift in Sources */,
+				5270698D23AE866200042056 /* AlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
