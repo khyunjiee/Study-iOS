@@ -114,3 +114,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
 }
+
+class MyMessageCell: UITableViewCell {
+    
+    @IBOutlet var label_message: UILabel!
+    
+}
+
+class DestinationMessageCell: UITableViewCell {
+    
+    @IBOutlet var label_message: UILabel!
+    
+}
