@@ -1,0 +1,16 @@
+PODS:
+  - SSCalendar (0.0.3)
+
+DEPENDENCIES:
+  - SSCalendar
+
+SPEC REPOS:
+  trunk:
+    - SSCalendar
+
+SPEC CHECKSUMS:
+  SSCalendar: 65498d7ec6ff38b4aead38d3cf8bb317666a2fe4
+
+PODFILE CHECKSUM: 16b35000858cf356ee8913c3193c22f1538bd8a0
+
+COCOAPODS: 1.8.4
