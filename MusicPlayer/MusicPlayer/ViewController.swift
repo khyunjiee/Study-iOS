@@ -87,6 +87,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.initializePlayer()
     }
 
+    // MARK: IBActions
     @IBAction func touchUpPlayPauseButton(_ sender: UIButton) {
         
         sender.isSelected = !sender.isSelected
