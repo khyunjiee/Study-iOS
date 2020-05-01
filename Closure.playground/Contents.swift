@@ -43,9 +43,18 @@ condition(stmt: (4 > 2))
 
 var arrs = [String]()
 
+addVars(fn: arrs.insert("KR", at: 1))
+print(arrs)
+
 func addVars(fn: @autoclosure () -> Void) {
     arrs = Array(repeating: "", count: 3)
     fn()
 }
 
-addVars(fn: arrs.insert("KR", at: 1))
+//addVars(fn: {
+//    arrs.insert("KR", at: 1)
+//})
+//print(arrs)
+
+//addVars(fn: arrs.insert("KR", at: 1))
+//print(arrs)
