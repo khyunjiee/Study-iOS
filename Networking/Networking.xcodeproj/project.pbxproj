@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52D279DD2472D51600E94443 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D279DC2472D51600E94443 /* Request.swift */; };
 		52E64D602472911C0096D71E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E64D5F2472911C0096D71E /* AppDelegate.swift */; };
 		52E64D622472911C0096D71E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E64D612472911C0096D71E /* SceneDelegate.swift */; };
 		52E64D642472911C0096D71E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E64D632472911C0096D71E /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52D279DC2472D51600E94443 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		52E64D5C2472911C0096D71E /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E64D5F2472911C0096D71E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52E64D612472911C0096D71E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				52E64D6A247291250096D71E /* LaunchScreen.storyboard */,
 				52E64D6D247291250096D71E /* Info.plist */,
 				52E64D73247291D80096D71E /* Model.swift */,
+				52D279DC2472D51600E94443 /* Request.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				52E64D642472911C0096D71E /* ViewController.swift in Sources */,
 				52E64D602472911C0096D71E /* AppDelegate.swift in Sources */,
+				52D279DD2472D51600E94443 /* Request.swift in Sources */,
 				52E64D622472911C0096D71E /* SceneDelegate.swift in Sources */,
 				52E64D74247291D80096D71E /* Model.swift in Sources */,
 			);
