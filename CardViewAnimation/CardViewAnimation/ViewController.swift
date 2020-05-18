@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         case collapsed
     }
     
+    // xib 참조
     var cardViewController: CardViewController!
+    // 애니메이션 효과
     var visualEffectView: UIVisualEffectView!
     
     let cardHeight: CGFloat = 600
@@ -111,7 +113,7 @@ class ViewController: UIViewController {
             let blurAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1) {
                 switch state {
                 case .expanded:
-                    self.visualEffectView.effect = UIBlurEffect(style: .dark)
+                    self.visualEffectView.effect = UIBlurEffect(style: .light)
                 case .collapsed:
                     self.visualEffectView.effect = nil
                 }

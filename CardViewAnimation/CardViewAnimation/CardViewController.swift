@@ -11,13 +11,5 @@ import UIKit
 class CardViewController: UIViewController {
 
     @IBOutlet var handleArea: UIView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-    
-
 
 }
