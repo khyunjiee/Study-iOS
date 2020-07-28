@@ -2,7 +2,7 @@
 //  CreateAccountViewController.swift
 //  Coordinators
 //
-//  Created by 김현지 on 2020/07/12.
+//  Created by 김현지 on 2020/07/28.
 //  Copyright © 2020 김현지. All rights reserved.
 //
 
@@ -19,5 +19,14 @@ class CreateAccountViewController: UIViewController, Storyboarded {
     }
     
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
