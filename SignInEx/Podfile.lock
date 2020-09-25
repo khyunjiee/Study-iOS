@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.0.1)
+  - SuperEasyLayout (0.1.0)
+
+DEPENDENCIES:
+  - SnapKit (~> 5.0.0)
+  - SuperEasyLayout
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - SuperEasyLayout
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SuperEasyLayout: 6d7f5ec43faf704d85edc8f1fee773e66a53e5e4
+
+PODFILE CHECKSUM: 980117e95c9766f3c74fb4bf1862d5e1ad88f410
+
+COCOAPODS: 1.9.3

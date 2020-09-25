@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
         defaultTV.delegate = self
         defaultTV.dataSource = self
+        defaultTV.prefetchDataSource = self
     }
 
 }
@@ -47,7 +48,6 @@ extension ViewController: UITableViewDataSource {
         print("cellForRowAt : \(indexPath.row)")
         return cell
     }
-    
     
 }
 
